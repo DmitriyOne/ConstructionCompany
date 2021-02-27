@@ -1,0 +1,401 @@
+.header__burger, .btn__menu, .callOur__nav
+    display: none
+.callOur__nav
+    .phone__nav, .mail__nav
+        font-family: 'mont', Arial, Helvetica, sans-serif
+        font-size: 22px
+        line-height: 20px
+        color: #fff
+        +r(480)
+            font-size: 16px
+    .phone__nav
+        position: relative
+        margin-top: 39px
+        margin-bottom: 15px
+        .img1
+            position: absolute
+            top: 0
+            left: -35px
+    .mail__nav
+        position: relative
+        .img2
+            position: absolute
+            top: 0
+            left: -35px
+
+.wrap
+    position: relative
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 30
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 81px
+        background-color: #393F44
+        z-index: 3
+        +r(975)
+            height: 70px !important
+            +r(768)
+                height: 81px !important
+                +r(600)
+                    height: 65px !important
+                    +r(500)
+                        height: 56px !important
+    .header__body
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+.header__menu
+    width: 100%
+    height: 81px
+    +r(975)
+        height: 70px
+    .header__list
+        position: relative
+        z-index: 5
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 100%
+        height: 100%
+        white-space: nowrap
+        & li
+            margin-left: -3%
+            +r(480)
+                margin-bottom: 23px !important
+        & li:first-child
+            margin-left: 0%
+        & li:last-child
+            margin-right: 0%
+            +r(1330)
+                margin-right: 4%
+                +r(480)
+                    margin-bottom: 0 !important
+        .header__link
+            text-transform: uppercase
+            font-family: 'montbold', Arial, Helvetica, sans-serif
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            color: #fff
+            +r(1330)
+                font-size: 18px
+                +r(975)
+                    font-size: 14px
+                    +r(768)
+                        font-size: 22px
+                        font-family: 'mont'
+                        +r(480)
+                            font-size: 16px
+        .header__link:hover
+            color: #FFA800
+
+// button(768)
++r(768)
+    .btn__menu
+        cursor: pointer
+        margin-right: 31px
+        display: block
+        height: 45px
+        background-color: #FFA800
+        font-family: 'mont', Arial, Helvetica, sans-serif
+        font-size: 14px
+        line-height: 17px
+        font-weight: 600
+        color: #fff
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5)
+        z-index: 3
+        padding: 0 30px
+        &:hover
+            background-color: #FFC34E
+        +r(600)
+            font-size: 12px
+            +r(500)
+                font-size: 8px
+                line-height: 10px
+                height: 28px
+                padding: 0px 22px
+                margin-right: 15px
+
+// burger
++r(768)
+    .header__burger
+        display: block
+        position: relative
+        width: 48px
+        height: 36px
+        z-index: 5
+        margin-left: 34px
+        transition: 0s
+        +r(500)
+            height: 22px
+            margin-left: 15px
+        & span
+            position: absolute
+            top: 15px
+            left: 0
+            width: 48px
+            height: 4px
+            background-color: #fff
+            +r(500)
+                top: 10px
+                height: 2px
+                width: 36px
+    .header__burger::before, .header__burger::after
+        content: ''
+        position: absolute
+        left: 0
+        width: 48px
+        height: 4px
+        background-color: #fff
+        transition: 0.1s
+        +r(500)
+            height: 2px
+            width: 36px
+    .header__burger::before
+        top: 0
+    .header__burger::after
+        bottom: 0
+    .head__container
+        width: 100%
+    // menu
+    .header__body
+        height: 80px
+        +r(600)
+            height: 65px
+            +r(500)
+            height: 56px
+    .header__menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 100%
+        height: 100vh
+        background-color: #393F44
+        transition: 0.5s
+
+    // FOR JQ
+    .header__burger.active
+        position: absolute
+        top: -67px
+        left: 27px
+        margin: 0
+        z-index: 10
+        +r(420)
+            top: -35px
+    .header__burger.active::before
+        transform: rotate(45deg)
+        width: 36px
+        top: 15px
+        height: 2px
+
+    .header__burger.active::after
+        transform: rotate(-45deg)
+        width: 36px
+        bottom: 18px
+        height: 2px
+        +r(500)
+            bottom: 5px
+
+    .header__burger.active span
+        display: none
+
+    .header__menu.active
+        left: 0
+        z-index: 9
+
+    .header__list
+        flex-direction: column
+        padding-top: 65px
+    .wrap.active:before
+        z-index: 0
+    .callOur__nav.active
+        display: flex
+        flex-direction: column
+        padding-bottom: 51px
+    li
+        margin: 0 !important
+
+// text head 
+
+.wrap__headText
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background-image: url(../../img/BG_MAIN.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    height: 872px
+    width: 100%
+    +r(1330)
+        height: 800px
+        +r(975)
+            height: 650px
+            +r(768)
+                height: 346px
+                +r(560)
+                    height: 300px
+                    +r(420)
+                        height: 211px
+    .text__h1
+        position: relative
+        width: 983px
+        max-width: 983px
+        height: 176px
+        +r(1330)
+            max-width: 800px
+            +r(975)
+                max-width: 750px
+                +r(768)
+                    max-width: 560px
+                    height: 91px
+                    +r(560)
+                        width: 360px
+                        height: 70px
+                        +r(420)
+                            width: 268px
+                            height: 48px
+        h1
+            font-family: 'montbold', Arial, Helvetica, sans-serif
+            font-size: 72px
+            font-weight: 700
+            line-height: 88px
+            color: #fff
+            text-shadow: 0px 0px 20px #000000
+            text-align: center
+            +r(1330)
+                font-size: 58px
+                line-height: 82px
+                +r(975)
+                    font-size: 54px
+                    line-height: 78px
+                    +r(768)
+                        font-size: 36px
+                        line-height: 44px
+                        text-shadow: 0px 5px 10px #000000
+                        +r(560)
+                            font-size: 24px
+                            line-height: 34px
+                            +r(420)
+                                font-size: 20px
+                                line-height: 24px
+                                text-shadow: 0px 2px 4px #000000
+
+    .btn__call
+        position: relative
+        margin-top: 115px
+        width: 300px
+        max-width: 315px
+        height: 61px
+        background: #FFA800
+        color: #fff
+        +r(1330)
+            margin-top: 100px
+            width: 280px
+            +r(975)
+                margin-top: 60px
+                width: 240px
+                +r(768)
+                    margin-top: 38px
+                    width: 235px
+                    height: 44px
+                    +r(560)
+                        margin-top: 30px
+                        width: 185px
+                        height: 38px
+                        +r(420)
+                            margin-top: 29px
+                            width: 150px
+                            height: 28px
+        input
+            cursor: pointer
+            width: 100%
+            height: 100%
+            background: #FFA800
+            font-family: 'montbold', Arial, Helvetica, sans-serif
+            font-size: 18px
+            font-weight: 700
+            line-height: 24px
+            color: #fff
+            border-radius: 2px
+            letter-spacing: 0.15px
+            +r(1330)
+                font-size: 16px
+                +r(768)
+                    font-family: 'mont'
+                    font-weight: 600px
+                    font-size: 14px
+                    line-height: 24px
+                    +r(560)
+                        font-size: 10px
+                        +r(420)
+                            font-weight: 600
+                            font-size: 8px
+                            line-height: 10px
+        span
+            position: absolute
+            top: -1px
+            right: -14px
+            width: 30px
+            height: 63px
+            background: #393F44
+            transform: skewX(-25deg)
+            +r(768)
+                right: -5px
+                height: 45px
+                width: 22px
+                +r(560)
+                    top: 0px
+                    height: 38px
+                    +r(420)
+                        height: 28px
+                        right: 0
+                        width: 15px
+        span::before
+            content: ''
+            position: absolute
+            top: 0
+            right: -15px
+            width: 30px
+            transform: skewX(25deg)
+            height: 100%
+            background: #393f44
+            z-index: 4
+            +r(768)
+                width: 26px
+                +r(420)
+                    width: 23px
+        span::after
+            content: ''
+            position: absolute
+            top: 40%
+            left: 50%
+            background-image: url(../../img/arrow.svg)
+            background-repeat: no-repeat
+            width: 100%
+            height: 40%
+            transform: skewX(25deg)
+            z-index: 9
+            +r(768)
+                top: 35%
+                left: 45%
+                +r(420)
+                    background-image: url(../../img/arrowsmall.svg)
+                    left: 73%
+                    top: 38%
+    .btn__call
+        input:hover
+            background-color: #FFC34E
+
+        
+                
+
+
+

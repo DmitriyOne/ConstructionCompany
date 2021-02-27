@@ -1,0 +1,225 @@
+.header
+  height: 142px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-family: 'montbold', Arial, Helvetica, sans-serif
+  color: #393F44
+  +r(1065)
+    height: 110px
+    +r(768)
+      height: 89px
+      +r(420)
+        height: 53px
+  .logo__header
+    display: flex
+    align-items: center
+    & img
+      width: 38%
+      max-width: 290px
+      height: auto
+      position: relative
+      +r(1065)
+        width: 75%
+        +r(768)
+          width: 38%
+          +r(560)
+            width: 33%
+            +r(420)
+              width: 104px
+    hr
+      outline: none
+      border: none
+      width: 2px
+      height: 79px
+      background: #FFA800
+      margin-right: 32px
+      margin-left: 42px
+      +r(1230)
+        height: 70px
+        margin-right: 12px
+        margin-left: 12px
+        +r(1065)
+          display: none
+          +r(768)
+            display: block
+            margin-right: 20px
+            margin-left: 20px
+            height: 50px
+            +r(580)
+              height: 35px
+              width: 1px
+              margin: 0 10px
+              +r(420)
+                display: none
+
+
+.logo__header
+  p
+    font-size: 24px
+    line-height: 29px
+    +r(1230)
+      font-size: 22px
+      line-height: 26px
+      +r(1065)
+        display: none
+        +r(768)
+          display: block
+          font-family: 'mont'
+          font-weight: 600
+          font-size: 14px
+          line-height: 17px
+          +r(560)
+            font-size: 12px
+            line-height: 15px
+            +r(420)
+              display: none
+
+// стили к правой части
+.contact__header
+  display: flex
+  .callOur
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-right: 37px
+    +r(768)
+      margin-right: 0
+    .phone, .mail
+      font-size: 20px
+      line-height: 24px
+      position: relative
+      padding-bottom: 3px
+      +r(1065)
+        font-family: 'mont'
+        font-weight: 700
+        +r(768)
+          font-size: 16px
+          line-height: 20px
+          +r(680)
+            font-size: 12px
+            white-space: nowrap
+            +r(560)
+              font-size: 10px
+              line-height: 12px
+              font-weight: 600
+              padding: 2px 0
+
+
+.img1
+  position: absolute
+  left: -40px
+  width: 23px
+  height: 23px
+  +r(1065)
+    top: 3px
+    left: -30px
+    width: 21px
+    height: 21px
+    +r(768)
+      top: 0
+      left: -35px
+      +r(560)
+        width: 13px
+        height: 13px
+        left: -20px
+  img
+    width: 100%
+    height: 100%
+
+.mail
+  text-decoration: none
+  color: #393f44
+  font-size: 16px
+  position: relative
+  +r(1065)
+    font-family: 'mont'
+    font-weight: 700
+
+.img2
+  position: absolute
+  left: -40px
+  width: 23px
+  height: 23px
+  +r(1065)
+    bottom: 2px
+    left: -30px
+    width: 21px
+    height: 21px
+    +r(768)
+      top: 0
+      left: -35px
+      +r(560)
+        width: 13px
+        height: 13px
+        left: -20px
+
+
+  img
+    width: 100%
+    height: 100%
+
+.btn__header
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 270px
+  max-width: 270px
+  height: 59px
+  background-color: #FFA800
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+  font-family: 'mont', Arial, Helvetica, sans-serif
+  font-size: 16px
+  line-height: 20px
+  font-weight: 700
+  color: #fff
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5)
+  +r(1230)
+    width: 240px
+    +r(1065)
+      width: 210px
+      height: 50px
+      font-size: 14px
+      +r(768)
+        display: none
+  &:hover
+    background-color: #FFC34E
+
+
+
+
+
+
+
+  // .menu-open
+  //   position: absolute
+  //   left: 20px
+  //   top: 65px
+  //   width: 30px
+  //   height: 30px
+  //   display: none
+  //   z-index: 99
+  //   +r(1100)
+  //     display: block
+  //   +r(767)
+  //     top: 55%
+  //     transform: translate(0, -50%)
+  //   span
+  //     width: 30px
+  //     height: 2px
+  //     margin-top: 10px
+  //     background: $white
+  //     display: block
+  //     &:before, &:after
+  //       content: ''
+  //       width: 30px
+  //       height: 2px
+  //       background: $white
+  //       position: absolute
+  //       left: 0
+  //     &:before
+  //       top: 0
+  //     &:after
+  //       bottom: 8px
