@@ -1,14 +1,10 @@
-// import './import/swiper';
-import './import/ui';
-// import objectFitImages from 'object-fit-images';
 
 $(document).ready(function() {
-  $('.header__burger').click(function(e) {
+  $('.header__burger').click(function() {
     $('.header__burger, .header__menu, .wrap, .callOur__nav ').toggleClass('active');
-    
+
   });
 });
-
 
 $('.btn__call input').click(function(event) {
   event.preventDefault();
@@ -23,15 +19,10 @@ $('.header__body input').click(function(event) {
   show();
 });
 
-
-
 $('.popup__bg').click(function(event) {
   event.preventDefault();
   hide();
 });
-
-
-
 
 function show() {
   $('.popup').fadeIn(300);
