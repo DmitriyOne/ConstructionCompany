@@ -1,5 +1,14 @@
 //- //BEGIN pop-up
+
+.popup
+  .wrap__popup
+    h2 Оставьте данные <br> и мы свяжемся с Вами
+    form(action="#", method="post")
+      input(type="text", name="name" placeholder="Имя*" autocomplete="off") 
+      input(type="tel", name="telephone" placeholder="Телефон*" autocomplete="off")
+        input(type="checkbox", name="check" id="check")
+        label(for="check") Я принимаю условия пользовательского соглашения
+      input(type="button", value="ОТПРАВИТЬ")
 .popup__bg
-  .popup 
 
 //- //END pop-up
