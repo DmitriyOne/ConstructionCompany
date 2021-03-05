@@ -2,5 +2,187 @@
     display: flex
     justify-content: center
     align-items: center
-    .wrap__block2 
-        border: 1px solid black
+    height: 1250px
+    +r(1065)
+        height: 850px
+        +r(680)
+            height: 750px
+            +r(480)
+                height: 730px
+
+    .wrap__block2
+        max-width: 1620px
+        height: 1113px
+        background-image: url(../img/BC-block2.jpg)
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        +r(1500)
+            height: 900px
+            +r(1330)
+                height: 930px
+                +r(1065)
+                    padding-top: 100px
+                    height: 100%
+                    background-size: cover
+                    +r(680)
+                        padding-top: 45px
+                        background-size: contain
+                        +r(480)
+                            padding: 0
+        .line1
+            display: flex
+            height: 500px
+            margin-bottom: 30px
+            +r(1500)
+                height: 450px
+                +r(1065)
+                    height: 320px
+                    +r(680)
+                        flex-direction: column-reverse
+            .aboutCompany
+                max-width: 550px
+                margin-left: 68px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                +r(1065)
+                    max-width: 300px
+                    margin-left: 50px
+                    +r(680)
+                        align-items: center
+                        width: 100%
+                        max-width: 100%
+                        margin: 0
+                h2
+                    display: block
+                    font-family: 'montbold', Arial, Helvetica, sans-serif
+                    font-size: 44px
+                    line-height: 66px
+                    letter-spacing: 0.2px
+                    color: #272727
+                    padding-bottom: 25px
+                    +r(1500)
+                        font-size: 42px
+                        +r(1065)
+                            font-size: 32px
+                            padding-bottom: 15px
+                            +r(680)
+                                font-size: 22px
+                                line-height: 66px
+                                padding-bottom: 10px
+                                +r(480)
+                                    font-size: 18px
+                                    padding: 0
+            img
+                padding-left: 100px
+                +r(1330)
+                    padding: 0
+                    width: 50%
+                    +r(1065)
+                        width: 45%
+                        height: 100%
+                        object-fit: cover
+                        +r(975)
+                            width: 50%
+                            +r(680)
+                                width: 45%
+                                +r(480)
+                                    height: 44%
+                                    width: 47%
+                                    +r(420)
+                                        width: 55%
+                                        +r(360)
+                                            width: 65%
+p
+    font-family: 'mont', Arial, Helvetica, sans-serif
+    font-weight: 100
+    font-size: 32px
+    line-height: 42px
+    color: #272727
+    +r(1500)
+        font-size: 28px
+        line-height: 40px
+        +r(1065)
+            font-size: 20px
+            line-height: 28px
+            +r(680)
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 20px
+                width: 300px
+                +r(480)
+                    font-size: 14px
+                    line-height: 16px
+                    max-width: 240px
+
+b
+    font-family: 'montbold'
+.line2
+    display: flex
+    justify-content: space-around
+    height: 570px
+    +r(1500)
+        height: 520px
+        +r(1330)
+            height: 50%
+            +r(1065)
+                margin-top: 30px
+                height: 350px
+                +r(680)
+                    flex-direction: column
+                    align-items: flex-end
+    .endAbout
+        max-width: 705px
+        margin-right: 80px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-left: 90px
+        +r(1330)
+            padding: 0
+            margin-right: 50px
+            +r(680)
+                align-items: center
+                margin: 0
+                +r(480)
+                    width: 100%
+        +r(1600)
+            p
+                font-size: 24px
+                line-height: 36px
+                +r(1065)
+                    font-size: 20px
+                    line-height: 24px
+                    +r(680)
+                        font-size: 16px
+                        line-height: 20px
+                        width: 80%
+                        +r(480)
+                            font-size: 14px
+                            line-height: 18px
+                            max-width: 280px
+
+    img
+        padding-bottom: 50px
+        padding-right: 60px
+        object-fit: cover
+        +r(1330)
+            padding-right: 0
+            width: 50%
+            height: 100%
+            +r(680)
+                width: 45%
+                padding: 0
+                +r(480)
+                    height: 40%
+                    width: 48%
+                    +r(420)
+                        width: 55%
+                        +r(360)
+                            width: 65%
++r(680)
+    .endAbout
+        span
+            display: block
+            padding-top: 15px
