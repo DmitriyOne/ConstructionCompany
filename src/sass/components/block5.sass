@@ -68,7 +68,7 @@
                 height: 280px
                 +r(1065)
                     height: 240px
-                    +r(769)
+                    +r(768)
                         height: 200px
                         +r(560)
                             height: 165px
@@ -163,8 +163,6 @@
         left: 320px
         +r(768)
             left: 90%
-        +r(480)
-            left: 200px
 
     // пагинация
 .swiper-container-horizontal .swiper-pagination-bullets
@@ -181,7 +179,9 @@
                     bottom: 0px!important
                     left: 50% !important
                     +r(560)
-                        bottom: 15px!important
+                        bottom: 20px!important
+                        +r(480)
+                            bottom: 12px !important
                 
 .swiper-pagination-bullet
     margin: 0 !important
@@ -201,10 +201,16 @@
         height: 35px
         font-size: 14px
         line-height: 17px
+        +r(560)
+            width: 27px
+            height: 28px
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet 
     transform: scale(.63)
     +r(560)
-        transform: scale(.37)
+        transform: scale(.48)
+        +r(480)
+            transform: scale(.4)
+            
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active, 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main
@@ -212,7 +218,12 @@
     background-color: #FFA800
     border: none
     +r(560)
-        transform: scale(0.6)
+        transform: scale(.8)
+        +r(480)
+            transform: scale(.7)
+
+
+
     
 
 
