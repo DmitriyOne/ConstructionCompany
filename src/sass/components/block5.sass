@@ -10,11 +10,11 @@
         +r(1290)   
             height: 910px
             +r(768)
-                height: 650px
+                height: 680px
                 +r(560)
-                    height: 500px
+                    height: 520px
                     +r(480)
-                        height: 430px
+                        height: 440px
     .image-slider
         height: 940px
         width: 90%
@@ -27,11 +27,11 @@
                 +r(1065)
                     height: 660px
                     +r(768)
-                        height: 550px
+                        height: 560px
                         +r(560)
-                            height: 450px
+                            height: 460px
                             +r(480)
-                                height: 360px
+                                height: 370px
 
         h3
             font-family: 'montbold', Arial, Helvetica, sans-serif
@@ -137,10 +137,16 @@
         background-size: 36px 38px
         width: 36px
         height: 38px
-        +r(480)
-            top: 90%
+        +r(768)
+            top: 94%
+            background-size: 37px 33px
             width: 37px
-            height: 20px
+            height: 33px
+            +r(560)
+                top: 90%
+                background-size: 26px 23px
+                width: 26px
+                height: 23px
 .swiper-button-next:after, .swiper-button-prev:after
     content: ''
 .swiper-button-prev
@@ -153,8 +159,12 @@
 .swiper-button-next
     right: 0
     left: 350px
-    +r(480)
-        left: 200px
+    +r(1065)
+        left: 320px
+        +r(768)
+            left: 90%
+        +r(480)
+            left: 200px
 
     // пагинация
 .swiper-container-horizontal .swiper-pagination-bullets
@@ -163,11 +173,16 @@
     left: 200px !important
     +r(1500)
         bottom: 25px!important
-        +r(1065)
-            bottom: 10px !important
-            +r(480)
-                left: 125px !important
-                bottom: 15px !important
+        +r(1290)
+            bottom: 20px !important
+            +r(1065)
+                bottom: 10px !important
+                +r(768)
+                    bottom: 0px!important
+                    left: 50% !important
+                    +r(560)
+                        bottom: 15px!important
+                
 .swiper-pagination-bullet
     margin: 0 !important
     left: 0px !important
@@ -180,25 +195,24 @@
     opacity: 1
     border-radius: none 
     border-radius: 0
-    transition: 1.2s !important
+    transition: 0.8s !important
     +r(1065)
         width: 35px
         height: 35px
         font-size: 14px
         line-height: 17px
-        +r(480)
-            width: 15px
-            height: 15px
-            font-size: 10px
-            line-height: 12px
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet 
     transform: scale(.63)
+    +r(560)
+        transform: scale(.37)
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active, 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main
     transform: scale(1)
     background-color: #FFA800
     border: none
+    +r(560)
+        transform: scale(0.6)
     
 
 
