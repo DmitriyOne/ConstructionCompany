@@ -127,24 +127,26 @@
 
     //стрелочки
 .swiper-button-next, .swiper-button-prev
-    top: 95%
+    top: 92%
     margin-top: 0
-    +r(480)
-        top: 90%
-        width: 37px
-        height: 20px
+    background-size: 42px 47px
+    width: 42px
+    height: 47px
+    +r(1065)
+        top: 93%
+        background-size: 36px 38px
+        width: 36px
+        height: 38px
+        +r(480)
+            top: 90%
+            width: 37px
+            height: 20px
 .swiper-button-next:after, .swiper-button-prev:after
     content: ''
 .swiper-button-prev
     background-image: url('../icons/arrowL_24px.svg')
-    background-size: 42px 47px
-    width: 42px
-    height: 47px
 .swiper-button-next
     background-image: url('../icons/arrowR_24px.svg')
-    background-size: 42px 47px
-    width: 42px
-    height: 47px
 
 
 
@@ -156,33 +158,47 @@
 
     // пагинация
 .swiper-container-horizontal .swiper-pagination-bullets
-    bottom: 5px !important
+    bottom: 32px !important
     text-align: left !important
-    left: 190px !important
-    +r(480)
-        left: 125px !important
-        bottom: 15px !important
+    left: 200px !important
+    +r(1500)
+        bottom: 25px!important
+        +r(1065)
+            bottom: 10px !important
+            +r(480)
+                left: 125px !important
+                bottom: 15px !important
 .swiper-pagination-bullet
-    left: 12px !important
+    margin: 0 !important
+    left: 0px !important
     width: 39px
     height: 37px
     font-size: 16px
     line-height: 20px
     background-color: transparent
     border: 3px solid #FFFFFF
+    opacity: 1
     border-radius: none 
     border-radius: 0
-    +r(480)
-        width: 15px
-        height: 15px
-        font-size: 10px
-        line-height: 12px
+    transition: 1.2s !important
+    +r(1065)
+        width: 35px
+        height: 35px
+        font-size: 14px
+        line-height: 17px
+        +r(480)
+            width: 15px
+            height: 15px
+            font-size: 10px
+            line-height: 12px
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet 
-    transform: scale(.33)
+    transform: scale(.63)
+
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active, 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main
     transform: scale(1)
-    background-color: #
+    background-color: #FFA800
+    border: none
     
 
 
