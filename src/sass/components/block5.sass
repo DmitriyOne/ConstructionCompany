@@ -135,12 +135,22 @@
         height: 20px
 .swiper-button-next:after, .swiper-button-prev:after
     content: ''
+.swiper-button-prev
+    background-image: url('../icons/arrowL_24px.svg')
+    background-size: 42px 47px
+    width: 42px
+    height: 47px
+.swiper-button-next
+    background-image: url('../icons/arrowR_24px.svg')
+    background-size: 42px 47px
+    width: 42px
+    height: 47px
 
 
 
 .swiper-button-next
     right: 0
-    left: 330px
+    left: 350px
     +r(480)
         left: 200px
 
@@ -153,15 +163,26 @@
         left: 125px !important
         bottom: 15px !important
 .swiper-pagination-bullet
+    left: 12px !important
     width: 39px
     height: 37px
     font-size: 16px
     line-height: 20px
-    background-color: #FFA800
-    border-radius: none
+    background-color: transparent
+    border: 3px solid #FFFFFF
+    border-radius: none 
+    border-radius: 0
     +r(480)
         width: 15px
         height: 15px
         font-size: 10px
         line-height: 12px
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet 
+    transform: scale(.33)
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active, 
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main
+    transform: scale(1)
+    background-color: #
+    
+
 

@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrowL_24px" viewBox="0 0 47 42">
+    <path d="M23.5 42l4.142-3.701L11.25 23.625H47v-5.25H11.25L27.643 3.701 23.5 0 0 21l23.5 21z"/>
+</symbol><symbol id="icon-arrowR_24px" viewBox="0 0 47 42">
+    <path d="M23.5 42l-4.142-3.701L35.75 23.625H0v-5.25h35.75L19.357 3.701 23.5 0 47 21 23.5 42z"/>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
