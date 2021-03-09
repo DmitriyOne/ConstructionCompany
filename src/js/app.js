@@ -50,9 +50,9 @@ const swiper = new Swiper('.swiper-container', {
     dynamicBullets: true,
   },
   loop: true,
-  // autoplay: {
-  //   delay: 4000,
-  // },
+  autoplay: {
+    delay: 4000,
+  },
   speed: 600,
 });
 
