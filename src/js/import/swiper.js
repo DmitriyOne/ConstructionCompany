@@ -1,6 +1,8 @@
 // import Swiper from 'swiper';
 
 
+// new Swiper('.image-slider');
+
 // //home
 // var swiper = new Swiper('.swiper-shares', {
 //   slidesPerView: 2,

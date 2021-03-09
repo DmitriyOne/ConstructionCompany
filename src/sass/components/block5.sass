@@ -1,0 +1,163 @@
+.block5
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    height: 1090px
+    background-color: #393F44
+    padding: 0
+    +r(1500)
+        height: 950px
+        +r(1290)   
+            height: 910px
+            +r(768)
+                height: 650px
+                +r(560)
+                    height: 500px
+                    +r(480)
+                        height: 430px
+    .image-slider
+        height: 940px
+        width: 90%
+        max-width: 1660px
+        margin: 0
+        +r(1500)
+            height: 840px
+            +r(1290)
+                height: 760px
+                +r(1065)
+                    height: 660px
+                    +r(768)
+                        height: 550px
+                        +r(560)
+                            height: 450px
+                            +r(480)
+                                height: 360px
+
+        h3
+            font-family: 'montbold', Arial, Helvetica, sans-serif
+            font-size: 44px
+            line-height: 66px
+            letter-spacing: 0.2px
+            color: #fff
+            margin-bottom: 40px
+            +r(1195)
+                font-size: 40px
+                +r(1065)
+                    font-size: 36px
+                +r(768)
+                    font-size: 30px
+                    margin-bottom: 20px
+                    text-align: center
+                    +r(680)
+                        font-size: 26px
+                        +r(560)
+                            line-height: 40px
+                            font-size: 18px
+
+    // стили для картинкок в слайде
+    .img__line1, .img__line2
+        display: flex
+        justify-content: flex-end
+        height: 90%
+        max-height: 360px
+        width: 100%
+        overflow: hidden
+        +r(1500)
+            height: 320px
+            +r(1290)
+                height: 280px
+                +r(1065)
+                    height: 240px
+                    +r(769)
+                        height: 200px
+                        +r(560)
+                            height: 165px
+                            +r(480)
+                                height: 140px
+
+
+        & img
+            width: 30%
+            max-width: 450px
+            overflow: auto
+            object-fit: cover
+            object-position: center
+            +r(975)
+                width: 100%
+                +r(768)
+                    width: 80%
+                    +r(680)
+                        width: 50%
+        & img:last-child
+            width: 320px
+            +r(680)
+                display: none
+        +r(680)
+            img:nth-child(3)
+                width: 150px
+                object-position: left        
+            
+                
+
+    .img__line2
+        +r(480)
+            height: 120px
+        & img
+            object-fit: cover
+            object-position: center
+            width: 30%
+            max-width: 450px
+            overflow: auto
+            +r(975)
+                width: 100%
+                +r(768)
+                    width: 80%
+                    +r(680)
+                        width: 50%
+
+
+        & img:last-child
+            width: 320px
+            +r(680)
+                display: none
+        +r(680)
+            img:nth-child(3)
+                width: 150px
+                object-position: left
+
+    //стрелочки
+.swiper-button-next, .swiper-button-prev
+    top: 95%
+    margin-top: 0
+    +r(480)
+        top: 90%
+        width: 37px
+        height: 20px
+
+.swiper-button-next
+    right: 0
+    left: 330px
+    +r(480)
+        left: 200px
+
+    // пагинация
+.swiper-container-horizontal .swiper-pagination-bullets
+    bottom: 5px !important
+    text-align: left !important
+    left: 190px !important
+    +r(480)
+        left: 125px !important
+        bottom: 15px !important
+.swiper-pagination-bullet
+    width: 39px
+    height: 37px
+    font-size: 16px
+    line-height: 20px
+    background-color: #FFA800
+    border-radius: none
+    +r(480)
+        width: 15px
+        height: 15px
+        font-size: 10px
+        line-height: 12px
+

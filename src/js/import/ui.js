@@ -1,6 +1,6 @@
-// import '../lib/maskedinput.js';
-// import modal from 'jquery-modal';
-// import selectric from 'selectric';
+import '../lib/maskedinput.js';
+import modal from 'jquery-modal';
+import selectric from 'selectric';
 
 //select
 // $('select').selectric();
