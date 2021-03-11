@@ -1,5 +1,5 @@
 
-
+// бургер
 $(document).ready(function() {
   $('.header__burger').click(function() {
     $('.header__burger, .header__menu, .wrap, .callOur__nav ').toggleClass('active');
@@ -7,6 +7,7 @@ $(document).ready(function() {
   });
 });
 
+// попапы
 $('.btn__call input').click(function(event) {
   event.preventDefault();
   show();
@@ -25,11 +26,15 @@ $('.popup__bg').click(function(event) {
   hide();
 });
 
+
+
+// функции для попапов
+// открытие
 function show() {
   $('.popup').fadeIn(300);
   $('.popup__bg').fadeIn(300);
 }
-
+// закрытие
 function hide() {
   $('.popup').fadeOut(300);
   $('.popup__bg').fadeOut(300);
@@ -53,7 +58,7 @@ const swiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 4000,
   },
-  speed: 600,
+  speed: 700,
 });
 
 

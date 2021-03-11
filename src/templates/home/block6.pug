@@ -1,0 +1,29 @@
+.container-fluid.block6
+    .container.wrap__block6
+        .wrap__contactsMAP
+            h3 НАШИ КОНТАКТЫ
+            .mobile__wrap
+                .mail
+                    a(href="mailto:skveles1@mail.ru" target="_blank") skveles1@mail.ru
+                .tel 
+                    a(href="tel:+7 905 734-28-42" target="_blank") +7 905 734-28-42
+                .geo 
+                    a(href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%BE%D0%B2,+1,+%D0%A0%D0%B0%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B5,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+140105/@55.585617,38.2002843,17z/data=!3m1!4b1!4m5!3m4!1s0x414ac0791c972b5b:0x8de00d6ad57effe9!8m2!3d55.585614!4d38.202473" target="_blank").geo__link МО, г. Раменское, <br> ул. Космонавтов, дом 1, каб. 12
+            
+            //- MAP
+            section.maps
+                div(style='width: 100%')
+                    iframe(width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=100%25&height=320&hl=en&q=%D0%9C%D0%9E,%20%D0%B3.%20%D0%A0%D0%B0%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D0%B5,%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%BE%D0%B2,%20%D0%B4%D0%BE%D0%BC%201+(Shop)&t=&z=14&ie=UTF8&iwloc=B&output=embed')
+        .wrap__contactsCALL
+            .wrap__CALL
+                h4 Форма обратной связи
+                .CALL 
+                    form(action="#", method="post")
+                        input(type="text", name="name" placeholder="Имя*" autocomplete="off") 
+                        input(type="tel", name="telephone" placeholder="Телефон*" autocomplete="off")
+                        textarea(placeholder="Сообщение" name="comment")
+                        div 
+                            input(type="checkbox", name="check" id="check")
+                            label(for="check") Я принимаю условия пользовательского соглашения
+                        input(type="button", value="ЗАКАЗАТЬ ЗВОНОК")
+            
