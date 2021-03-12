@@ -1,1 +1,173 @@
-.footer
+.block__foot
+    background-color: #393F44
+    height: 210px
+    padding: 0
+    +r(1500)
+        height: 170px
+        +r(1290)
+            height: 130px
+            +r(975)
+                height: 90px
+                +r(768)
+                    height: 220px
+                    +r(680)
+                        height: 265px
+    .wrap__foot
+        height: 70%
+        +r(768)
+            height: 80%
+            +r(680)
+                height: 85%
+        .footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            height: 100%
+            +r(768)
+                justify-content: flex-start
+                +r(680)
+                    justify-content: center
+                    flex-direction: column
+
+
+            // LOGO
+            & .bc__footer
+                background-image: url('../img/logoFooter.png')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: 290px 100px
+                width: 290px
+                height: 100px
+                +r(1500)
+                    background-size: 200px 70px
+                    width: 200px
+                    height: 70px
+                    margin-left: 15px
+                    +r(1290)
+                        background-size: 150px 50px
+                        width: 150px
+                        height: 50px
+                        margin-left: 10px
+                        +r(975)
+                            background-size: 110px 40px
+                            width: 110px
+                            height: 40px
+                            margin-left: 5px
+                            +r(768)
+                                background-size: 200px 70px
+                                width: 215px
+                                height: 70px
+                                margin-left: 10px
+                                +r(680)
+                                    background-size: 155px 50px
+                                    width: 155px
+                                    height: 50px
+                                    margin-left: 0
+                                    margin-bottom: 30px
+
+
+// menu
++r(768)
+    .col__1, .col__2
+        display: flex
+        flex-direction: column
+    .col__1
+        margin: 0 90px
+        +r(680)
+            margin: 0 40px 0 0
+    .col__2
+        margin-right: 20px
+        +r(680)
+            margin-right: 5px
+    .foot__link1
+        display: none
+        +r(680)
+            display: block
+// ссылки
+.footer__list
+    display: flex
+    .foot__link768
+        display: none
+        +r(768)
+            display: block
+            +r(680)
+                display: none
+    
+    a
+        color: #fff
+        font-family: "mont", Arial, Helvetica, sans-serif
+        font-weight: bold
+        font-size: 18px
+        line-height: 22px
+        margin-left: 60px
+        text-transform: uppercase
+        +r(1500)
+            margin-left: 50px
+            font-size: 14px
+            line-height: 17px
+            +r(1290)
+                margin-left: 35px
+                font-size: 11px
+                line-height: 14px
+                +r(975)
+                    margin-left: 25px
+                    font-size: 10px
+                    line-height: 12px
+                    +r(768)
+                        font-size: 16px
+                        line-height: 20px
+                        letter-spacing: -0.065em
+                        margin: 10px 0 10px 0
+                        white-space: nowrap
+                        +r(680)
+                            font-size: 12px
+                            line-height: 16px
+                            margin: 7px 0 7px 0
+    & a:last-child
+        margin-right: 20px
+        +r(1290)
+            margin-right: 10px
+            +r(975)
+                margin-right: 5px
+    & a:hover
+        color: #FFA800
+
+
+
+
+
+
+
+// copirate
+.copirate 
+    width: 100%
+    p
+        font-family: 'mont', Arial, Helvetica, sans-serif
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: #fff
+        +r(1500)
+            font-size: 12px
+            line-height: 16px
+            +r(1290)
+                font-size: 8px
+                line-height: 14px
+                +r(975)
+                    font-size: 7px
+                    +r(768)
+                        font-size: 12px
+                        line-height: 20px
+                        +r(680)
+                            width: 100%
+                            margin: 0
+                            font-size: 8px
+                            line-height: 15px
+                            +r(480)
+                                width: 100%
+                                max-width: 100%
+                                margin: 0
+
+
+
+
