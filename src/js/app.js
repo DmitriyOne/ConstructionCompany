@@ -4,8 +4,24 @@ $(document).ready(function() {
   $('.header__burger').click(function() {
     $('.header__burger, .header__menu, .wrap, .callOur__nav ').toggleClass('active');
 
+
+    if ($('.header__burger').hasClass('active')) {
+      $('body').addClass('fixedPosition');
+    }
+    else {
+      $('body').removeClass('fixedPosition');
+    }
   });
 });
+
+
+$('.header__link').click(function() {
+  $('.header__burger, .header__menu, .wrap, .callOur__nav ').removeClass('active');
+  $('body').removeClass('fixedPosition');
+});
+
+
+
 
 // попапы
 $('.btn__call input').click(function(event) {
@@ -63,4 +79,5 @@ const swiper = new Swiper('.swiper-container', {
 
 
 
-// objectFitImages()
+
+
